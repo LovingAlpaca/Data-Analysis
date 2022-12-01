@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>肿瘤分析预测</title>
+</head>
+<div class="jumbotron">
+  <h1 class="display-4">Hello, world!</h1>
+  <p class="lead">This is a simple hero unit, a simple jumbotron-style component for calling extra attention to featured content or information.</p>
+  <hr class="my-4">
+  <p>It uses utility classes for typography and spacing to space content out within the larger container.</p>
+  <a class="btn btn-primary btn-lg" href="#" role="button">Learn more</a>
+</div>
+<body>
+
+{% if result %}
+<h1>预估结果:{{ result }}</h1>
+{% endif %}
+
+<form action="/" method="post">
+    <table>
+        <tr>
+            <th>请输入Age:</th>
+            <td><input type="text" name="Age"></td>
+        </tr>
+        <tr>
+            <th>请输入PSA:</th>
+            <td><input type="text" name="PSA"></td>
+        </tr>
+        <tr>
+            <th>请输入Volume:</th>
+            <td><input type="text" name="Volume"></td>
+        </tr>
+        <tr>
+            <th>请输入PSAD:</th>
+            <td><input type="text" name="PSAD"></td>
+        </tr>
+        <tr>
+            <th>请输入PIRADS_First:</th>
+            <td><input type="text" name="PIRADS_First"></td>
+        </tr>
+        <tr>
+            <th>请输入PIRADS_Biopsy:</th>
+            <td><input type="text" name="PIRADS_Biopsy"></td>
+        </tr>
+        <tr>
+            <th>请输入Gleason_SB_TB:</th>
+            <td><input type="text" name="Gleason_SB_TB"></td>
+        </tr>
+        <tr>
+            <th>请输入Gleason_TB:</th>
+            <td><input type="text" name="Gleason_TB"></td>
+        </tr>
+        <tr>
+            <th>请输入Gleason_SB:</th>
+            <td><input type="text" name="Gleason_SB"></td>
+        </tr>
+        <tr>
+            <th>请输入Scanner:</th>
+            <td><input type="text" name="Scanner"></td>
+        </tr>
+        <tr>
+            <th>请输入IL_Localisation:</th>
+            <td><input type="text" name="IL_Localisation"></td>
+        </tr>
+        <tr>
+            <th>请输入IL_Diameter:</th>
+            <td><input type="text" name="IL_Diameter"></td>
+        </tr>
+        <tr>
+            <th>提交:</th>
+            <td><input type="submit" name="submit" value="提交"></td>
+        </tr>
+    </table>
+</form>
+
+<form>
+  <div class="form-group">
+    <label for="exampleFormControlInput1">Email address</label>
+    <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="name@example.com">
+  </div>
+  <div class="form-group">
+    <label for="exampleFormControlSelect1">Example select</label>
+    <select class="form-control" id="exampleFormControlSelect1">
+      <option>1</option>
+      <option>2</option>
+      <option>3</option>
+      <option>4</option>
+      <option>5</option>
+    </select>
+  </div>
+</form>
+
+
+
+
+
+
+</body>
+</html>

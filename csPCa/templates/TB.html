@@ -1,0 +1,199 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="">
+    <meta name="author" content="Mark Otto, Jacob Thornton, and Bootstrap contributors">
+    <meta name="generator" content="Hugo 0.88.1">
+    <title>Testing indicators to fill in and submit</title>
+
+
+    <!-- Bootstrap core CSS -->
+<link href="../static/bootstrap.min.css" rel="stylesheet">
+
+
+
+    <style>
+      .bd-placeholder-img {
+        font-size: 1.125rem;
+        text-anchor: middle;
+        -webkit-user-select: none;
+        -moz-user-select: none;
+        -ms-user-select: none;
+        user-select: none;
+      }
+
+      @media (min-width: 768px) {
+        .bd-placeholder-img-lg {
+          font-size: 3.5rem;
+        }
+      }
+    </style>
+
+
+    <!-- Custom styles for this template -->
+    <link href="/static/form-validation.css" rel="stylesheet">
+  </head>
+  <body class="bg-light">
+<div class="container">
+  <div class="col-md-8 order-md-1">
+    <p class="lead">MRI-Targeted Biopsy. </p>
+    <p class="lead">Please fill in the corresponding medical test indicators in order according to the diagnosis strategy.The predicted results are based on the analysis of the currently selected diagnostic strategy.</p>
+    <p class="lead">The predicted results are based on the analysis of the currently selected diagnostic strategy.</p>
+  </div>
+{% if result %}
+<h1>Predicted results: {{ result }}</h1>
+  <h1>(1 means csPCa,0 means nsPCa)</h1>
+{% endif %}
+  <div class="row">
+
+    <div class="col-md-8 order-md-1">
+      <form class="needs-validation" action="/TB" method="post" novalidate>
+        <div class="row">
+
+
+
+
+
+
+
+
+
+          <div class="col-md-5 mb-3">
+            <label for="Age">Age</label>
+            <input type="text" class="form-control" name="Age" placeholder="" value="" required>
+            <div class="invalid-feedback">
+              Valid Age is required.
+            </div>
+          </div>
+          <div class="col-md-5 mb-3">
+            <label for="PSA">(PSA)Prostate Specific Antigen</label>
+            <input type="text" class="form-control" name="PSA" placeholder="" value="" required>
+            <div class="invalid-feedback">
+              Valid (PSA)Prostate Specific Antigen is required.
+            </div>
+          </div>
+          <div class="col-md-5 mb-3">
+          <label for="Volume">Volume</label>
+            <input type="text" class="form-control" name="Volume" placeholder="" value="" required>
+            <div class="invalid-feedback">
+              Valid Volume is required.
+            </div>
+        </div>
+          <div class="col-md-5 mb-3">
+          <label for="PSAD">(PSAD)PSA Density</label>
+            <input type="text" class="form-control" name="PSAD" placeholder="" value="" required>
+            <div class="invalid-feedback">
+              Valid (PSAD)PSA Density is required.
+            </div>
+        </div>
+
+
+          <div class="col-md-5 mb-3">
+            <label for="PIRADS_First">PIRADS First MRI Evaluation</label>
+            <select class="custom-select d-block w-100" name="PIRADS_First" required>
+              <option value="">Choose...</option>
+              <option>1</option>
+              <option>2</option>
+              <option>3</option>
+              <option>4</option>
+              <option>5</option>
+            </select>
+            <div class="invalid-feedback">
+              Please select a valid PIRADS First MRI Evaluation.
+            </div>
+          </div>
+          <div class="col-md-5 mb-3">
+            <label for="PIRADS_Biopsy">PIRADS Biopsy MRI Evaluation</label>
+            <select class="custom-select d-block w-100" name="PIRADS_Biopsy" required>
+              <option value="">Choose...</option>
+              <option>1</option>
+              <option>2</option>
+              <option>3</option>
+              <option>4</option>
+              <option>5</option>
+            </select>
+            <div class="invalid-feedback">
+              Please select a valid PIRADS Systematic Biopsy MRI Evaluation.
+            </div>
+          </div>
+
+          <div class="col-md-5 mb-3">
+            <label for="Gleason_TB">Gleason Score (TB)</label>
+            <select class="custom-select d-block w-100" name="Gleason_TB" required>
+              <option value="">Choose...</option>
+              <option>0</option>
+              <option>6</option>
+              <option>7</option>
+              <option>8</option>
+              <option>9</option>
+              <option>10</option>
+            </select>
+            <div class="invalid-feedback">
+              Please select a valid Gleason (TB) Evaluation.
+            </div>
+          </div>
+
+          <div class="col-md-5 mb-3">
+            <label for="Scanner">Number of Scanner Scans </label>
+            <select class="custom-select d-block w-100" name="Scanner" required>
+              <option value="">Choose...</option>
+              <option>1</option>
+              <option>2</option>
+              <option>3</option>
+              <option>4</option>
+              <option>5</option>
+              <option>6</option>
+              <option>7</option>
+              <option>8</option>
+              <option>9</option>
+              <option>10</option>
+            </select>
+            <div class="invalid-feedback">
+              Please select a valid Number of Scanner Scans.
+            </div>
+          </div>
+
+
+          <div class="col-md-5 mb-3">
+          <label for="IL_Localisation">Localization of MRI index lesion</label>
+            <input type="text" class="form-control" name="IL_Localisation" placeholder="" value="" required>
+            <div class="invalid-feedback">
+              Valid Localization of MRI index lesion is required.
+            </div>
+        </div>
+          <div class="col-md-5 mb-3">
+          <label for="IL_Diameter">Max diameter MRI index lesion</label>
+            <input type="text" class="form-control" name="IL_Diameter" placeholder="" value="" required>
+            <div class="invalid-feedback">
+              Valid maximum diameter of MRI index lesion is required.
+            </div>
+        </div>
+        </div>
+
+
+
+
+
+
+
+
+
+        <hr class="mb-4">
+        <button class="btn btn-primary btn-lg btn-block col-md-10" type="submit" name="submit" value="submit">Submit</button>
+
+      </form>
+    </div>
+  </div>
+
+</div>
+
+
+    <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+      <script>window.jQuery || document.write('<script src="../static/jquery.slim.min.js"><\/script>')</script><script src="../static/bootstrap.bundle.min.js"></script>
+
+
+        <script src="/static/form-validation.js"></script>
+  </body>
+</html>

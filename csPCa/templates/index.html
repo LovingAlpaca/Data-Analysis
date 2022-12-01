@@ -1,0 +1,160 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="">
+    <meta name="author" content="Mark Otto, Jacob Thornton, and Bootstrap contributors">
+    <meta name="generator" content="Hugo 0.88.1">
+    <title>Yiyu Wang Clinically Significant Prostate Cancer Prediction System</title>
+
+
+
+
+    <!-- Bootstrap core CSS -->
+<link href="../static/bootstrap.min.css" rel="stylesheet">
+
+
+
+    <style>
+      .bd-placeholder-img {
+        font-size: 1.125rem;
+        text-anchor: middle;
+        -webkit-user-select: none;
+        -moz-user-select: none;
+        -ms-user-select: none;
+        user-select: none;
+      }
+
+      @media (min-width: 768px) {
+        .bd-placeholder-img-lg {
+          font-size: 3.5rem;
+        }
+      }
+    </style>
+
+
+    <!-- Custom styles for this template -->
+    <link href="../static/pricing.css" rel="stylesheet">
+  </head>
+
+  <body>
+    
+  <header>
+  <nav class="navbar navbar-expand-md navbar-dark fixed-top bg-dark">
+    <a class="navbar-brand" href="#">csPCa Prediction System</a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarCollapse">
+      <ul class="navbar-nav mr-auto">
+        <li class="nav-item">
+          <a class="nav-link" href="#">Clinically Significant Prostate Cancer Prediction System</a>
+        </li>
+      </ul>
+    </div>
+  </nav>
+</header>
+
+<div class="pricing-header px-3 py-3 pt-md-5 pb-md-4 mx-auto text-center">
+  <h1 class="display-4">_______________</h1>
+  <h1 class="display-4">Diagnostic Strategy</h1>
+  <p class="lead">Please select the appropriate classifier according to the diagnosis strategy.</p>
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div class="container">
+  <div class="card-deck mb-3 text-center">
+    <div class="card mb-4 shadow-sm">
+      <div class="card-header">
+        <h4 class="my-0 font-weight-normal">MRI</h4>
+      </div>
+      <div class="card-body">
+        <h1 class="card-title pricing-card-title">Screening<small class="text-muted">/ First</small></h1>
+        <ul class="list-unstyled mt-3 mb-4">
+          <li>Required indicators:</li>
+          <li>Age,Prostate Specific Antigen,</li>
+          <li>Volume,localization and diameter</li>
+          <li>PSAD,First PIRADS.</li>
+        </ul>
+        <button type="button" class="btn btn-lg btn-block btn-outline-primary" onclick="window.location.href='/MRI'" >Select</button>
+      </div>
+    </div>
+
+
+
+    <div class="card mb-4 shadow-sm">
+      <div class="card-header">
+        <h4 class="my-0 font-weight-normal">Systematic Biopsy</h4>
+      </div>
+      <div class="card-body">
+        <h1 class="card-title pricing-card-title">Screening<small class="text-muted">/ Secondary</small></h1>
+        <ul class="list-unstyled mt-3 mb-4">
+          <li>Required indicators:</li>
+          <li>Including indicators of the first screening then add Gleason score for systematic biopsy to it. </li>
+        </ul>
+        <button type="button" class="btn btn-lg btn-block btn-outline-primary" onclick="window.location.href='/SB'">Select</button>
+      </div>
+    </div>
+
+
+
+
+    <div class="card mb-4 shadow-sm">
+      <div class="card-header">
+        <h4 class="my-0 font-weight-normal">MRI-Targeted Biopsy</h4>
+      </div>
+      <div class="card-body">
+        <h1 class="card-title pricing-card-title">Screening<small class="text-muted">/ Secondary</small></h1>
+        <ul class="list-unstyled mt-3 mb-4">
+          <li></li>
+          <li>Including indicators of the first screening then add Gleason score for Targeted Biopsy with number of Scanner to it.</li>
+        </ul>
+        <button type="button" class="btn btn-lg btn-block btn-outline-primary" onclick="window.location.href='/TB'">Select</button>
+      </div>
+    </div>
+
+
+
+
+
+    <div class="card mb-4 shadow-sm">
+      <div class="card-header">
+        <h4 class="my-0 font-weight-normal">Systematic Biopsy combined with MRI-Targeted Biopsy</h4>
+      </div>
+      <div class="card-body">
+        <h1 class="card-title pricing-card-title">Screening<small class="text-muted">/ Third</small></h1>
+        <ul class="list-unstyled mt-3 mb-4">
+          <li>Required indicators:</li>
+          <li>Includes all indicators mentioned in MRI, Systematic Biopsy, MRI-Targeted Biopsy.</li>
+        </ul>
+        <button type="button" class="btn btn-lg btn-block btn-outline-primary" onclick="window.location.href='/SBTB'">Select</button>
+      </div>
+    </div>
+  </div>
+
+
+
+
+
+
+
+
+
+</div>
+
+
+    
+  </body>
+</html>
