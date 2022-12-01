@@ -1,8 +1,15 @@
-According to the four diagnostic strategies
+Dear Professors,
+I understand the model under four diagnostic strategies based on the article,
+according to the four diagnostic strategies
 MRI, SB, MRI-TB, and TB combined with SB, respectively
 Random forest and linear classification were built and generated methods and model reports for each respectively
 Random forest was selected as the deployment model through comparison
 Deployed to debian server through flask, html source is bootstrap and modified
+
+Show website www.jojoda.top
+
+Dataset Source:
+https://doi.org/10.1016/j.dib.2022.108683
 
 Model Training csPCa.ipynb 
 for the whole process of machine learning
@@ -26,7 +33,5 @@ The css and js files needed for the front end
 templates file folder
 html front-end web page
 
-Show website www.jojoda.top
-
-Dataset Source:
-https://doi.org/10.1016/j.dib.2022.108683
+Best regards,
+Yiyu
