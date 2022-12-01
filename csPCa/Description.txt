@@ -1,0 +1,29 @@
+According to the four diagnostic strategies
+MRI, SB, MRI-TB, and TBwithSB, respectively
+Random forest and linear classification were built and generated methods and model reports for each respectively
+Random forest was selected as the deployment model through comparison
+Deployed to debian server through flask, html source is bootstrap and modified
+
+Model Training csPCa.ipynb 
+for the whole process of machine learning
+
+App.py 
+is responsible for the server back-end flask framework
+
+Model.py 
+for the introduction of machine learning models (.joblib) to build the class library
+
+all.joblib
+These are the model files trained with random forest 
+and dataset (1-s2.0-S2352340922008885-mmc1.xls) based on the four diagnostic strategies
+
+requirements.txt
+Records the libraries used in this project
+
+static file folder
+The css and js files needed for the front end
+
+templates file folder
+html front-end web page
+
+Show website www.jojoda.top
