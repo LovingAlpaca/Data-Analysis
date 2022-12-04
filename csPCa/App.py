@@ -33,6 +33,10 @@ def get_predict_result(df,Select):
 def Home():
     return render_template("index.html")
 
+@app.route("/comparison",methods=["get","post"])
+def comparison():
+    return render_template("comparison.html")
+
 @app.route("/MRI",methods=["get","post"])
 def predict_MRI():
     result = None
