@@ -1,0 +1,124 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="">
+    <meta name="author" content="Mark Otto, Jacob Thornton, and Bootstrap contributors">
+    <meta name="generator" content="Hugo 0.88.1">
+    <title>Testing indicators to fill in and submit</title>
+
+
+    <!-- Bootstrap core CSS -->
+<link href="../static/bootstrap.min.css" rel="stylesheet">
+
+
+
+    <style>
+      .bd-placeholder-img {
+        font-size: 1.125rem;
+        text-anchor: middle;
+        -webkit-user-select: none;
+        -moz-user-select: none;
+        -ms-user-select: none;
+        user-select: none;
+      }
+
+      @media (min-width: 768px) {
+        .bd-placeholder-img-lg {
+          font-size: 3.5rem;
+        }
+      }
+    </style>
+
+
+    <!-- Custom styles for this template -->
+    <link href="/static/form-validation.css" rel="stylesheet">
+  </head>
+ <header>
+  <nav class="navbar navbar-expand-md navbar-dark fixed-top bg-dark">
+    <a class="navbar-brand" href="#">csPCa System</a>
+      <a class="nav-link" href="/">Back</a>
+      <a class="nav-link" href="/comparison">Models</a>
+
+
+    <div class="collapse navbar-collapse" id="navbarCollapse">
+      <ul class="navbar-nav mr-auto">
+        <li class="nav-item">
+          <a class="nav-link disabled">Clinically Significant Prostate Cancer Prediction System</a>
+        </li>
+      </ul>
+    </div>
+  </nav>
+</header>
+  <h1 class="display-5">C</h1>
+
+  <body class="bg-light">
+<div class="container">
+  <div class="col-md-8 order-md-1">
+    <h1 class="lead" style="background-color:LightGray;text-align:center">Machine Learning Models Prediction</h1>
+      <p class="lead" style="text-align:center">Diagnostic Strategy of Systematic combined with Targeted Biopsy</p>
+     <div style="text-align:center"><img class="lead" src="../static/Model_Prediction_Confusion_Matrix.png" alt="Italian Trulli" ></div>
+      <p class="lead" style="text-align:center">Figure.1 Model prediction confusion matrix</p>
+      <p class="lead">It can be seen that the prediction sensitivity of the model for the feature csPCa in the overall dataset is(407/(407+13) ≈ 97%)</p>
+
+      <p class="lead">It can be seen that the prediction specificity of the model for the overall dataset features csPCa is(294/(294+3) ≈ 98.9%)</p>
+
+      <p class="lead">It can be seen that the accuracy of the model for the overall dataset features csPCa is((407+294)/(407+13+294+3) ≈ 97.7%)</p>
+
+      <p class="lead">Note 1. that this prediction includes 60% of the training set</p>
+
+      <p class="lead" style="text-align:center">For the test set (Figure.3 Red underlined values) </p>
+      <p class="lead">Sensitivity of the model on the test set is 93%</p>
+
+      <p class="lead">specificity of the model on the test set is 97%</p>
+
+      <p class="lead">accuracy of the model on the test set is 95%</p>
+
+      <p class="lead">Note 2. The model results may vary by 2% depending on the seed,</p>
+      <p class="lead">Note 3. All the diagnostic strategies on the web are predicted by machine learning models,and the last section is the confusion matrix for human judgment</p>
+
+      <h1 class="lead" style="background-color:LightGray;text-align:center">Machine Learning Model Evaluation</h1>
+      <p class="lead" style="text-align:center">Evaluation of the models of the four diagnostic strategies</p>
+      <div><img src="../static/Model_Evaluation_1.png" alt="Italian Trulli" ></div>
+      <p class="lead" style="text-align:center">Figure.2 MRI Screening/First and Systematic Biopsy Screening/Secondary</p>
+      <div><img src="../static/Model_Evaluation_2.png" alt="Italian Trulli" ></div>
+      <p class="lead" style="text-align:center">Figure.3 MRI-Targeted Biopsy Screening/Secondary and Systematic Biopsy combined with MRI-Targeted Biopsy Screening/Third</p>
+
+      <h1 class="lead" style="background-color:LightGray;text-align:center">Human judgment Gleason Score</h1>
+
+      <p class="lead" style="text-align:center">Systematic Biopsy</p>
+      <div style="text-align:center"><img class="lead" src="../static/Systematic_biopsy_confusion_matrix.png" alt="Italian Trulli" ></div>
+      <p class="lead" style="text-align:center">Figure.4 Systematic Biopsy Gleason score confusion matrix</p>
+
+      <p class="lead">It can be seen that the prediction sensitivity of the Gleason_SB for the feature csPCa in the overall dataset is(394/(394+26) ≈ 93.8%)</p>
+      <p class="lead">It can be seen that the prediction specificity of the Gleason_SB for the overall dataset features csPCa is(183/(183+114) ≈ 61.6%)</p>
+      <p class="lead">It can be seen that the accuracy of the Gleason_SB for the overall dataset features csPCa is((394+183)/(394+26+183+114) ≈ 80.4%)</p>
+
+
+
+      <p class="lead" style="text-align:center">MRI-Targeted Biopsy</p>
+      <div style="text-align:center"><img class="lead" src="../static/Targeted_Biopsy_Confusion_Matrix.png" alt="Italian Trulli" ></div>
+      <p class="lead" style="text-align:center">Figure.5 MRI-Targeted Biopsy Gleason score confusion matrix</p>
+
+      <p class="lead">It can be seen that the prediction sensitivity of the Gleason_TB for the feature csPCa in the overall dataset is(341/(341+79) ≈ 81.2%)</p>
+
+      <p class="lead">It can be seen that the prediction specificity of the Gleason_TB for the overall dataset features csPCa is(177/(177+120) ≈ 59.6%)</p>
+
+      <p class="lead">It can be seen that the accuracy of the Gleason_TB for the overall dataset features csPCa is((341+177)/(341+79+177+120) ≈ 72.2%)</p>
+
+      <h1 class="lead" style="background-color:LightGray;text-align:center">Source of the dataset used in the model</h1>
+      <p class="lead">doi.org/10.1016/j.dib.2022.108683</p>
+  </div>
+
+
+</div>
+
+
+    <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+      <script>window.jQuery || document.write('<script src="../static/jquery.slim.min.js"><\/script>')</script><script src="../static/bootstrap.bundle.min.js"></script>
+
+
+        <script src="/static/form-validation.js"></script>
+  </body>
+</html>
